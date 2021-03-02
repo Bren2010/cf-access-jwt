@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+    "composite": true,
+    "target": "esnext",
+    "lib": ["esnext", "webworker"],
+    "types": ["@cfworker/worker-types", "@cloudflare/workers-types"],
+    "outDir": "dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"]
+}

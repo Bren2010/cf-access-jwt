@@ -1,0 +1,48 @@
+{
+  "name": "cf-access-jwt",
+  "version": "1.0.0",
+  "description": "Tiny lib for verifying Cloudflare Access JWTs.",
+  "keywords": [
+    "jwt",
+    "crypto",
+    "cloudflare",
+    "worker",
+    "workers",
+    "service-worker"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "tsconfig.json",
+    "README.md",
+    "package.json"
+  ],
+  "repository": "https://github.com/Bren2010/cf-access-jwt",
+  "author": "Brendan McMillion <brendan@cloudflare.com>",
+  "homepage": "https://github.com/Bren2010/cf-access-jwt",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@cfworker/base64url": "^1.6.8",
+    "@cfworker/worker-types": "^1.6.8",
+    "@cloudflare/workers-types": "^2.1.0"
+  },
+  "devDependencies": {
+    "@cfworker/dev": "^1.6.8",
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0",
+    "typescript": "^4.1.5"
+  }
+}
